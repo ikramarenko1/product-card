@@ -5,14 +5,88 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Product Card</title>
+	<title>Product Card UI</title>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
 
 	<!-- css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="card">
+			<div class="card__background">
+				<div class="card__gradients">
+					<div class="gradient second" color="blue"></div>
+					<div class="gradient" color="red"></div>
+					<div class="gradient" color="green"></div>
+					<div class="gradient" color="orange"></div>
+					<div class="gradient" color="black"></div>
+				</div>
+
+				<h1 class="card__title">Nike</h1>
+				<img src="assets/img/logo.png" alt="Nike logo" class="card__logo">
+				<a href="#" class="card__share">
+					<i class="fas fa-share-alt"></i>
+				</a>
+
+				<img src="assets/img/blue.png" alt="blue" class="shoe show" color="blue">
+				<img src="assets/img/red.png" alt="red" class="shoe" color="red">
+				<img src="assets/img/green.png" alt="green" class="shoe" color="green">
+				<img src="assets/img/orange.png" alt="orange" class="shoe" color="orange">
+				<img src="assets/img/black.png" alt="black" class="shoe" color="black">
+			</div>
+
+			<div class="card__info">
+				<div class="shoe__name">
+					<div>
+						<h1 class="shoe__title">Nike Zoom Kd 12</h1>
+						<span class="new">New</span>
+					</div>
+					<h3 class="shoe__subtitle">Men's running shoes</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum corrupti recusandae doloremque sit architecto earum omnis rem soluta facilis, tenetur sint quibusdam nostrum obcaecati eos, non veritatis? Sequi, expedita!</p>
+				</div>
+
+				<div class="card__color">
+					<h3 class="color__title title">Color</h3>
+					<div class="colors">
+						<span class="color active" primary="#2175f5" color="blue"></span>
+						<span class="color" primary="#f84848" color="red"></span>
+						<span class="color" primary="#29b864" color="green"></span>
+						<span class="color" primary="#ff5521" color="orange"></span>
+						<span class="color" primary="#444" color="black"></span>
+					</div>
+				</div>
+
+				<div class="card__size">
+					<div class="size__title title">Size</div>
+					<div class="sizes">
+						<span class="size">7</span>
+						<span class="size">8</span>
+						<span class="size active">9</span>
+						<span class="size">10</span>
+						<span class="size">11</span>
+					</div>
+				</div>
+
+				<div class="card__price">
+					<a href="#" class="card__action">
+						<i class="fas fa-shopping-cart"></i>
+						Add to cart
+					</a>
+
+					<div class="price">
+						<i class="fas fa-dollar-sign"></i>
+						<h1>189.99</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- js scripts -->
 	<script src="assets/js/main.js" defer></script>
+	<script src="https://kit.fontawesome.com/e78c8e5d61.js" crossorigin="anonymous"></script>
 </body>
 </html>
