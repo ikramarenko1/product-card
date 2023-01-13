@@ -151,5 +151,208 @@ body {
 	bottom: 0;
 	right: 0;
 	transform: rotate(-20deg);
-	transition: 0.5s;
+	transition: .5s;
+ }
+
+ .shoe.show { 
+	opacity: 1;
+ }
+
+
+ /* Info */
+ .card__info {
+	width: 50%;
+	background-color: #fff;
+	z-index: 1;
+	padding: 35px 40px;
+	box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+ }
+
+ .shoe__name {
+	padding: 0 0 10px 0;
+ }
+
+ .shoe__name div { 
+	display: flex;
+	align-items: center;
+ }
+
+ .shoe__name div .shoe__title {
+	margin-right: 10px;
+	font-size: 2rem;
+	color: #333;
+	line-height: 1;
+ }
+
+ .shoe__name div .new {
+	background-color: var(--primary);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 5px;
+	transition: .5s;
+ }
+
+ .shoe__name .shoe__subtitle {
+	font-weight: 500;
+	color: #444;
+	margin-top: 3px;
+	text-transform: capitalize;
+ }
+
+ .shoe__name,
+ .shoe__description,
+ .card__color,
+ .card__size {
+	border-bottom: 1px solid #dadada;
+ }
+
+ .shoe__description {
+	padding: 10px 0;
+ }
+
+.shoe__description-title {
+	color: #3a3a3a;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+ }
+
+ .shoe__text {
+	color: #555;
+	font-size: 17px;
+ }
+
+
+/* Color */
+ .card__color {
+	padding: 10px 0;
+ }
+
+ .colors {
+	padding: 8px 0;
+	display: flex;
+	align-items: center;
+ }
+
+ .color {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin: 0 10px;
+	border: 5px solid;
+	cursor: pointer;
+	transition: .5s;
+ }
+
+ .color[color="blue"] {
+	background-color: #2175f5;
+	border-color: #2175f5;
+ }
+ 
+ .color[color="red"] {
+	background-color: #f84848;
+	border-color: #f84848;
+ }
+ 
+ .color[color="green"] {
+	background-color: #29b864;
+	border-color: #29b864;
+ }
+ 
+ .color[color="orange"] {
+	background-color: #ff5521;
+	border-color: #ff5521;
+ }
+ 
+ .color[color="black"] {
+	background-color: #444;
+	border-color: #444;
+ }
+
+ .color.active {
+	border-color: #fff;
+	box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+	transform: scale(1.1);
+ }
+
+
+ /* Size */
+ .card__size {
+	padding: 10px 0;
+	margin-bottom: 10px;
+ }
+
+ .sizes {
+	padding: 8px 0;
+	display: flex;
+	align-items: center;
+ }
+
+ .size {
+	width: 40px;
+	height: 40px;
+	border-radius: 6px;
+	background-color: #eee;
+	margin: 0 10px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+ }
+
+ .size.active {
+	background-color: var(--primary);
+	color: #fff;
+	transition: .5s;
+ }
+
+
+ /* Price */
+ .card__price {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ .price {
+	color: #333;
+	display: flex;
+	align-items: flex-start;
+ }
+
+ .price h1 {
+	font-size: 2.1rem;
+	font-weight: 600;
+	line-height: 1;
+ }
+
+ .price i {
+	font-size: 1.4rem;
+	margin-right: 1px;
+ }
+
+ .card__action {
+	padding: 0.7rem 1rem;
+	background-color: var(--primary);
+	text-decoration: none;
+	color: #fff;
+	border-radius: 6px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: .5s;
+ }
+
+ .card__action:hover { 
+	transform: scale(1.1);
+ }
+
+ .card__action i {
+	margin-right: 2px;
  }
